@@ -6,31 +6,40 @@
   <title>投票到場登記</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   "PingFang TC", "Noto Sans TC", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", Arial, sans-serif;
       margin: 0;
       padding: 16px;
-      background: #f5f5f5;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
     }
     .container {
+      width: 100%;
       max-width: 600px;
-      margin: auto;
-      background: #fff;
-      padding: 16px;
-      border-radius: 8px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 20px;
+      font-size: 22px;
       text-align: center;
+      color: #1a73e8;
+      margin-bottom: 8px;
     }
-    p {
+    .notice {
+      background: #fff3cd;
+      color: #856404;
+      padding: 12px;
+      border-radius: 6px;
       font-size: 14px;
-      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
       text-align: center;
     }
     iframe {
       width: 100%;
-      height: 750px;
+      height: 600px;
       border: none;
     }
   </style>
@@ -38,11 +47,16 @@
 <body>
   <div class="container">
     <h1>投票到場登記</h1>
-    <p>僅記錄是否到場，不記錄投給誰</p>
+    <div class="notice">
+      <strong>【流程說明】</strong><br>
+      1. 請先在下方輸入姓名簽到。<br>
+      2. 點擊送出後，畫面會出現<strong>「投票連結」</strong>。<br>
+      3. 點擊該連結即可進行匿名投票（每人最多兩票）。
+    </div>
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdGg4Axmt0J8qE_PotsoH15sNBwwkNujPSZxoiHjU-Hnig6Ew/viewform?embedded=true">
+      載入中…
     </iframe>
-
   </div>
 </body>
 </html>
